@@ -44,7 +44,8 @@ if (form) {
       landingPageField.value = window.location.href;
 
       if (statusNode) {
-        statusNode.textContent = "Merci. Votre demande a bien été envoyée.";
+        statusNode.innerHTML =
+          'Merci. Votre demande a bien été envoyée. En attendant notre retour, vous pouvez découvrir <a href="https://celia-creation.fr" target="_blank" rel="noreferrer">CELIA Creation</a>.';
         statusNode.className = "form-status is-success";
       }
     } catch (error) {

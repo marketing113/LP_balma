@@ -180,6 +180,13 @@ p {
   gap: 14px;
 }
 
+.metric-side {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+
 .metric-copy {
   display: flex;
   flex-direction: column;
@@ -212,6 +219,35 @@ p {
   color: var(--text);
   font-size: 12px;
   line-height: 1.35;
+}
+
+.price-badge {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: fit-content;
+  max-width: 170px;
+  padding: 12px 14px;
+  border-radius: 18px;
+  background: #efe9df;
+  color: var(--text);
+}
+
+.price-badge span {
+  font-size: 11px;
+  line-height: 1.3;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sage);
+  font-weight: 700;
+}
+
+.price-badge strong {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 30px;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  font-weight: 600;
 }
 
 .hero-visual img,
